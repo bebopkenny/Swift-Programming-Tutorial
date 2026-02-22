@@ -27,4 +27,21 @@ let result = 1 + 2
 let names = "Foo" + " " + "B"
 
 
+let age = 30
+//let message: String
+//if age >= 18 {
+//    message = "You are an adult"
+//} else {
+//    message = "You are not yet an adult"
+//}
+
+//let message = CONDITION
+//? VALUE IF CONDITITION IS MET
+//: VALUE IF CONDITION IS NOT MET
+
+let message = age >= 18
+ ? "You are an adult"
+ : "You are not an adult"
+
+
 
