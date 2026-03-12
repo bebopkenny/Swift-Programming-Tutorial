@@ -17,6 +17,19 @@ func customAdd(_ lhs: Int, _ rhs: Int, using function: (Int, Int) -> Int) -> Int
     function(lhs, rhs)
 }
 
-customAdd(20, 30, using: (Int, Int) -> Int)
+customAdd(20, 30) {
+    $0 + $1
+}
 
+let ages = [30, 20, 19, 40]
+
+ages.sorted(by: {(lhs: Int, rhs: Int) -> Bool in
+    lhs > rhs
+})
+
+print(ages.sorted(by: <))
+
+func customAdd2(_ lhs: Int, _ rhs: Int, using function: (Int, Int) -> Int) -> Int {
+    function(lhs, rhs)
+}
 
